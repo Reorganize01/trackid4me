@@ -1,0 +1,31 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>TrackID4Me</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #101014; color: #f2f2f6;
+         font: 16px/1.6 "Segoe UI", system-ui, sans-serif;
+         display: flex; justify-content: center; padding: 8vh 20px; }
+  main { max-width: 34rem; }
+  h1 { font-size: 2rem; margin: 0 0 .2em; letter-spacing: -.01em; }
+  p.sub { color: #a8a8b4; margin-top: 0; }
+  code { background: #191920; border: 1px solid #26262f; border-radius: 5px;
+         padding: .1em .4em; font-size: .9em; }
+  a { color: #9146ff; }
+  ul { color: #a8a8b4; padding-left: 1.1em; }
+  footer { margin-top: 2.5em; color: #6f6f7d; font-size: .9em; }
+</style>
+<main>
+  <h1>TrackID4Me</h1>
+  <p class="sub">Answers <code>!id</code> in your Twitch chat with whatever
+     rekordbox is playing.</p>
+  <p>This page hosts the two files the app checks for itself:</p>
+  <ul>
+    <li><a href="latest.json">latest.json</a> — the current version</li>
+    <li><a href="revocations.json">revocations.json</a> — withdrawn licence keys</li>
+  </ul>
+  <p>Both are signed, so neither this page nor its host can make the app trust
+     anything that was not signed by the author.</p>
+  <footer>Made by <a href="https://www.twitch.tv/reorganize">Reorganize</a></footer>
+</main>
